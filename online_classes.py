@@ -13,7 +13,7 @@ win = tk.Tk()
 win.wm_title("Classes automated")
 win.geometry('500x500')
 
-welcome = tk.Label(text="Welcome to Online classes automated!").pack()
+welcome = tk.Label(text="Welcome to Online classes automated!")
 
 class Class():
     def __init__(self,meet_link):
