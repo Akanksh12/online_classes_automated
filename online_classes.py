@@ -13,7 +13,7 @@ win = tk.Tk()
 win.wm_title("Classes automated")
 win.geometry('500x500')
 
-welcome = tk.Label(text="Welcome to Online classes automated!")
+welcome = tk.Label(text="Welcome to Online classes automated!").pack()
 
 class Class():
     def __init__(self,meet_link):
@@ -51,13 +51,15 @@ fri = False
 Periods = ['08 30 00', '09 30 00', '10 10 00 ', '11 05 00', '11 45 00', '12 25 00']
 pn = 0
 
-sl = tk.Label(text="option selected")
-
-sl.pack()
+slm = tk.Label(text="option selected(Monday)")
+slt = tk.Label(text="option selected(Monday)")
+slw = tk.Label(text="option selected(Monday)")
+slth = tk.Label(text="option selected(Monday)")
+slf = tk.Label(text="option selected(Monday)")
 
 def exemon():
+    slm.pack()
     mon = True
-    sl.pack()
     pn = 0
     while mon == True:
         ctime = time.strftime('%H %M %S')
@@ -87,8 +89,8 @@ def exemon():
         
 
 def exetue():
+    slt.pack()
     tue = True
-    sl.pack()
     pn = 0
     while tue == True:
         ctime = time.strftime('%H %M %S')
@@ -117,8 +119,8 @@ def exetue():
             pn += 1
 
 def exewed():
+    slw.pack()
     wed = True
-    sl.pack()
     pn = 0
     while wed == True:
         ctime = time.strftime('%H %M %S')
@@ -148,8 +150,8 @@ def exewed():
         
 
 def exethu():
+    slth.pack()
     thu = True
-    sl.pack()
     pn = 0
     while thu == True:
         ctime = time.strftime('%H %M %S')
@@ -178,8 +180,8 @@ def exethu():
             pn += 1
 
 def exefri():
+    slf.pack()
     fri = True
-    sl.pack()
     pn = 0
     while fri == True:
         ctime = time.strftime('%H %M %S')
@@ -215,10 +217,3 @@ bfri = tk.Button(text="Friday", command=exefri).pack()
 
 
 win.mainloop()
-
-
-
-
-
-
-
